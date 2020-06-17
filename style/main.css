@@ -59,6 +59,11 @@ nav{
 .button-group button{
 	font-size: 1.4rem;
 }
+@media(max-width: 900px){
+	.overlay h1{
+		font-size: 3.6rem;
+	}
+}
 @media(max-width: 590px){
 	.overlay h1{
 		font-size: 3rem;
@@ -71,6 +76,16 @@ nav{
 		width: 90%;
 		margin-left: 5%;
 		margin-top: 10px;
+	}
+}
+@media(max-width: 490px){
+	.overlay h1{
+		font-size: 2.5rem;
+	}
+}
+@media(max-width: 410px){
+	.overlay h1{
+		font-size: 1.9rem;
 	}
 }
 @media(min-height: 900px){
@@ -179,6 +194,18 @@ nav{
 }
 .ground .font-weight-normal sup sup{
 	color: green;
+	animation: change 2.4s infinite;
+}
+@keyframes change{
+	0%{
+		color: green;
+	}
+	50%{
+		color: #00ff40;		
+	}
+	100%{
+		color:green;
+	}
 }
 .ground i{
 	color: #00caac;
@@ -235,6 +262,31 @@ nav{
 #footer p{
 	color: #919293;
 }
-@media(max-width:550px){
-	
+/*===================================================================================================================*/
+/*typing*/
+#effect{
+/*white-space: nowrap;*/
+}
+.cursor{
+	display: inline-block;
+	width: 1px;
+	background-color: white;
+	animation: cursor 0.7s infinite;
+}
+.typing{
+	animation:none;
+}
+@keyframes cursor{
+	0%{
+		background-color: white;
+	}
+	49%{
+		background-color: white;
+	}
+	50%{
+		background-color: transparent;
+	}
+	100%{
+		background-color: transparent;
+	}
 }
